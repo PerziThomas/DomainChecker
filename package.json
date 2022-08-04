@@ -1,0 +1,28 @@
+{
+  "name": "domainchecker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PerziThomas/DomainChecker.git"
+  },
+  "keywords": [
+    "domain"
+  ],
+  "author": "ThomasPerzi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PerziThomas/DomainChecker/issues"
+  },
+  "homepage": "https://github.com/PerziThomas/DomainChecker#readme",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "cheerio": "^1.0.0-rc.12",
+    "csvtojson": "^2.0.10",
+    "form-data": "^4.0.0"
+  }
+}

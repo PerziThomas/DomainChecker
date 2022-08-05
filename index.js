@@ -41,8 +41,6 @@ csvToJson({ delimiter: delimiter })
             });
         });
 
-        grab();
-
         initTable();
         checkDomains(domains);
     });
@@ -112,15 +110,4 @@ function initTable() {
     writeStream = fs.createWriteStream("table.md");
     writeStream.write("| Domain | Taken |");
     writeStream.write("\n| ------ | ----- |");
-}
-
-function grab() {
-    let $ = cheerio.load(fs.readFileSync("test.html"));
-    let csv = $(".pn").contents().toArray()
-    .map(element => $(element).text())
-    .map(name => name.split(" ").join(";"));
-
-    csv = csv.filter(name => name.split(";").length <= 2);
-
-    fs.writeFileSync("names.txt", csv.join("\n"));
 }

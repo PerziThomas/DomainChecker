@@ -1,7 +1,6 @@
 const csvToJson = require("csvtojson");
 const fs = require("fs");
 const axios = require("axios").default;
-const cheerio = require("cheerio");
 const FormData = require("form-data");
 
 const args = process.argv.splice(2);
